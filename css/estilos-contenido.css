@@ -1,0 +1,514 @@
+.info-inicio{
+    width: 800px;
+    margin: 150px auto;
+    background-color: #e0dcd3;
+}
+    .info-inicio p{
+        color: #404040;
+    }
+
+
+
+.resumen{
+    height: calc(100vh - 433px);
+    width: 100%;
+    margin-bottom: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px;
+}
+    .r-text{
+        width: 400px;
+    }
+    .iconografia{
+        width: 200px;
+        height: 200px;
+    }
+    .i-01{
+        background: url(../imagenes/iconografia/iconografia1.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .i-02{
+        background: url(../imagenes/iconografia/iconografia2.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .i-03{
+        height: 100px;
+        background: url(../imagenes/iconografia/iconografia3.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .i-04{
+        height: 180px;
+        background: url(../imagenes/iconografia/iconografia4.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+
+
+.filosofia{
+    width: 100%;
+}
+
+
+
+
+
+#history{
+    margin: 150px 350px;
+    display: flex;
+    justify-content: space-between;
+}
+.h-text{
+    width: 500px;
+}
+    .h-text p{
+        color: #404040;
+    }
+
+
+
+#ramas{
+    margin: 150px 350px;
+}
+.r-contenedores{
+    display: grid;
+    grid-template-columns: (2,1fr);
+    gap: 80px;
+    grid-template-rows: (3,1fr);
+    position: relative;
+    margin-top: 70px;
+}
+.r-contenedores > div{
+    box-sizing: border-box;
+}
+.r-contenedores div:nth-child(1){
+    grid-area: 1/2;
+}
+.separador{
+    width: 1px;
+    height: 80%;
+    background-color: #404040;
+    opacity: 40%;
+    position: absolute;
+    top: 10%;
+    right: 50%;
+}
+
+
+
+
+
+#galeria{
+    margin: 150px 300px;
+
+    display: grid;
+    grid-template-columns: repeat(3,300px);
+    gap: 50px;
+    grid-template-rows: repeat(5,300px);
+    justify-content: center;
+}
+    .gg{
+        position: relative;
+        overflow: hidden;
+    }
+        .gg:hover{
+            box-shadow: 0 0 25px #0001;
+        }
+    .filtrohover{
+        width: 100%;
+        height: 100%;
+        background-color: #A9AE88;
+        opacity: 30%;
+        position: absolute;
+        transition: all 250ms ease-in-out;
+    }
+        .filtrohover:hover{
+            /* transform: translateY(300px); */
+            opacity: 0%;
+            transition: all 250ms ease-in;
+        }
+    .gg:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        align-self: center;
+        box-shadow: none;
+    }
+    .gg:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .gg:nth-child(3){
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    /* .gg:nth-child(4){
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .gg:nth-child(5){
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .gg:nth-child(6){
+        grid-column: 3/4;
+        grid-row: 2/3;
+    } */
+    .ia{
+        width: 100%;
+        height: 100%;
+    }
+    .img-a1{
+        background-image: url(../imagenes/artistas/donald.png);
+    }
+    .img-a2{
+        background-image: url(../imagenes/artistas/lewitt.png);
+    }
+    .img-a3{
+        background-image: url(../imagenes/artistas/reinhardt.png);
+    }
+    .img-a4{
+        background-image: url(../imagenes/artistas/flavin.png);
+    }
+    .img-a5{
+        background-image: url(../imagenes/artistas/kusama.png);
+    }
+
+
+    .io{
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .img-o1{
+        background-image: url(../imagenes/obras/abstract_number107-reinhardt.jpg);
+    }
+    .img-o2{
+        background-image: url(../imagenes/obras/abstract_painting-reinhardt.jpg);
+    }
+    .img-o3{
+        background-image: url(../imagenes/obras/abstract_painting_red-reinhardt.jpg);
+    }
+    .img-o4{
+        background-image: url(../imagenes/obras/burnt_piece-winsor.jpg);
+    }
+    .img-o5{
+        background-image: url(../imagenes/obras/incomplete_open_cube-lewitt.jpg);
+    }
+    .img-o6{
+        background-image: url(../imagenes/obras/Narcissus_Garden-kusama.jpg);
+    }
+    .img-o7{
+        background-image: url(../imagenes/obras/nose-winsor.jpg);
+    }
+    .img-o8{
+        background-image: url(../imagenes/obras/pintura-reinhardt.jpg);
+    }
+    .img-o9{
+        background-image: url(../imagenes/obras/Untitled-Donald.jpg);
+    }
+    .img-o10{
+        background-image: url(../imagenes/obras/untitled-flavin.jpg);
+    }
+    .img-o11{
+        background-image: url(../imagenes/obras/untitled-reinhardt.jpg);
+    }
+    .img-o12{
+        background-image: url(../imagenes/obras/wall_drawing-lewitt.jpg);
+    }
+
+
+
+
+
+#contacto{
+    margin: 150px 350px;
+}
+.contact{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.c-datos{
+    width: 100%;
+    margin-top: 100px;
+}
+.c-title{
+    font-size: 72px;
+    text-align: left;
+    margin-bottom: 80px;
+}
+.c-di{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 15px;
+    /* justify-content: space-between; */
+}
+.c-di h3{
+    margin-bottom: 0;
+}
+.c-di a{
+    font-size: 14px;
+    color: #404040;
+}
+.c-di a:hover{
+    color: #000;
+}
+.c-email{
+    text-decoration: none;
+    border-bottom: 1px #40404044 solid;
+}
+.c-r{
+    width: 50%;   
+}
+.c-r a{
+    margin: 0 10px;
+}
+.formulario{
+    width: 50%;
+    margin-top: 20px;
+}
+.formulario form{
+    width: 100%;
+    height: 100%;
+}
+.f-list{
+    list-style: none;
+}
+    .f-list > li{
+        margin-bottom: 20px;
+    }
+    .f-list label{
+        display: inline-block;
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+    .f-list input, .f-list textarea{
+        /* line-height: 30px; */
+        width: 100%;
+        height: 30px;
+        padding: 5px 10px;
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #40404044;
+        box-sizing: border-box;
+        transition: all 250ms ease-in-out;
+    }
+    .f-list input:hover, .f-list textarea:hover{
+        background-color: #A9AE8820;
+        transition: all 250ms ease-in-out;
+    }
+    .f-list input:focus, .f-list textarea:focus{
+        outline: none;
+        box-shadow: inset 0 0 20px #0001;
+        background-color: #ececec;
+        transition: all 250ms ease-in-out;
+
+    }
+    .f-list input::placeholder, .f-list textarea::placeholder{
+        color: #40404077;
+    }
+    .btn-estandar{
+        font-weight: 700;
+        display: block;
+        margin: auto;
+        padding: 10px 64px;
+        background-color: #e0dcd3;
+        outline: none;
+        border: 1px solid #404040;
+        margin-top: 50px;
+        transition: all 250ms ease-in-out;
+    }
+    .btn-estandar:hover{
+        cursor: pointer;
+        background-color: #A9AE88;
+        transition: all 250ms ease-in-out;
+    }
+    
+
+
+.separador2{
+    width: 1px;
+    height: 80%;
+    background-color: #404040;
+    opacity: 40%;
+    position: absolute;
+    top: 0;
+    right: 50%;
+}
+
+
+
+
+
+#about{
+    height: calc(100vh - 433px);
+    margin: 150px 350px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .ab-title{
+        font-size: 72px;
+        text-align: left;
+        line-height: 40px;
+    }
+    #about > div > p{
+        margin-top: 80px;
+    }
+
+
+
+
+
+#articulo{
+    width: 800px;
+    margin: 150px auto;
+}
+.a-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .a-datos > h3{
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+    .a-datos > p{
+        color: #808080;
+        font-size: 14px;
+    }
+.a-img{
+    position: relative;
+}
+.a-img > div > img{
+    width: 350px;
+    height: 350px;
+}
+    .btn-ex{
+        font-size: 20px;
+        padding: 5px;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        background: #A9AE88;
+        border: 1px solid black;
+    }
+    .btn-ex:hover{
+        cursor: pointer;
+        border: 1px dashed #404040;
+        background-color: #e0dcd3;
+    }
+
+.a-descripcion{
+    min-height: fit-content;
+    max-height: 250px;
+    margin-top: 40px;
+    padding-bottom: 15px;
+    /* background-color: #A9AE88; */
+
+    display: flex;
+    justify-content: space-between;
+}
+    .a-descripcion > p{
+        width: 350px;
+        min-height: fit-content;
+        max-height: 250px;
+    }
+
+
+
+
+
+#content-slider{
+    margin-top: 80px;
+}
+.d-s{
+    overflow-x: scroll;
+}
+.d-s::-webkit-scrollbar{
+    height: 7px;
+}
+.d-s::-webkit-scrollbar-track{
+    background: #A9AE88;
+}
+.d-s::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 10px;
+    border: 2px solid #A9AE88;
+}
+.slider{
+    width: fit-content;
+    position: relative;
+
+    display: flex;
+    gap: 10px;
+}
+    .r-img{
+        color: #404040;
+        display: block;
+        width: 400px;
+        height: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-decoration: none;
+    }
+    .r-img > img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ri-o > p{
+        font-size: 14px;
+        width: 400px;
+        height: fit-content;
+        color: #A9AE88;
+        background-image: linear-gradient(transparent, #000);
+        padding: 30px 20px 10px 20px;
+        box-sizing: border-box;
+
+        position: absolute;
+        bottom: 0;
+    }
+
+
+
+.s-recomendaciones{
+    gap: 25px;
+}
+.s-recomendaciones > .r-img{
+    width: 200px;
+    height: 280px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+    .ri-r > p{
+        font-size: 14px;
+        color: #404040;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: #A9AE88;
+
+        opacity: 0;
+        transition: all .3s ease-out;
+    }
+    .ri-r:hover p{
+        opacity: 100%;
+        transition: all .3s ease-in-out;
+    }
