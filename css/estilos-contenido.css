@@ -114,7 +114,7 @@
     display: grid;
     grid-template-columns: repeat(3,300px);
     gap: 50px;
-    grid-template-rows: repeat(5,300px);
+    grid-template-rows: repeat(3,300px);
     justify-content: center;
 }
     .gg{
